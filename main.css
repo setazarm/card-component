@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: hsl(0deg, 0%, 100%);
+  margin: 10em auto;
+  padding: 1em;
+}
+.card img {
+  border-radius: 10px;
+}
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-content h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+.card .card-content p {
+  font-size: 14px;
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.card .card-content .Category {
+  text-transform: uppercase;
+  align-self: flex-start;
+  letter-spacing: 3px;
+  margin-top: 2em;
+}
+.card .card-content .price {
+  align-self: flex-start;
+  padding-left: 1em;
+}
+.card .card-content .current-price {
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+.card .card-content .pre-price {
+  padding-left: 2em;
+  text-decoration: line-through;
+}
+.card .card-content button {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(158deg, 36%, 37%);
+  width: 80%;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 375px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 1em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
